@@ -25,6 +25,9 @@ jobs:
         with:
           channel: 'stable'
 
+      - name: Android proje dosyalarını oluştur
+        run: flutter create . --platforms android
+
       - name: Bağımlılıkları İndir
         run: flutter pub get
 
