@@ -5,6 +5,7 @@ import 'package:easy_localization/easy_localization.dart';
 
 import 'screens/home_screen.dart';
 import 'providers/auth_provider.dart';
+import 'providers/game_provider.dart';
 import 'providers/video_provider.dart';
 import 'providers/live_provider.dart';
 
@@ -35,6 +36,7 @@ class SchamChatApp extends StatelessWidget {
         return MultiProvider(
           providers: [
             ChangeNotifierProvider(create: (_) => AuthProvider()),
+            ChangeNotifierProvider(create: (_) => GameProvider()),
             ChangeNotifierProvider(create: (_) => VideoProvider()),
             ChangeNotifierProvider(create: (_) => LiveProvider()),
           ],
