@@ -28,7 +28,7 @@ dependencies:
 
   # Localization
   easy_localization: ^3.0.7
-  intl: ^0.19.0
+  intl: ^0.20.3
 
   # Storage
   shared_preferences: ^2.2.2
